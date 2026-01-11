@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="UTF-8">
+<title>Farhod.tj – Видео ва ҷустуҷӯ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Farhod.tj</h1>
+  <p>Видео ва ҷустуҷӯ бо интернет</p>
+</header>
+
+<!-- Ҷустуҷӯ аз Google -->
+<div class="search">
+  <input type="text" id="searchInput" placeholder="Аз Google ҷустуҷӯ кун...">
+  <button onclick="googleSearch()">🔍 Ҷустуҷӯ</button>
+</div>
+
+<!-- Видеоҳо -->function googleSearch() {
+  const q = document.getElementById("searchInput").value;
+  if (!q) return;
+  window.open("https://www.google.com/search?q=" + encodeURIComponent(q), "_blank");
+}
+<h2>🎥 Видеоҳо</h2>
+
+<div class="videos">
+
+<!-- YouTube -->
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+allowfullscreen></iframe>
+
+<!-- Facebook -->
+<iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/facebook/videos/10153231379946729/"
+allowfullscreen></iframe>
+
+<!-- Instagram -->
+<iframe src="https://www.instagram.com/p/CQ0XcZJH2uB/embed"
+allowfullscreen></iframe>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
